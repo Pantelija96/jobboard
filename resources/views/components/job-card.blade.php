@@ -10,11 +10,15 @@
             <div>{{ $job->location }}</div>
         </div>
         <div class="flex space-x-2 text-xs">
-            <x-tag class="capitalize">
-                {{ $job->experience }}
+            <x-tag>
+                <a href="{{ route('jobs.index', ['experience' => $job->experience]) }}" class="btn capitalize">
+                    {{ $job->experience }}
+                </a>
             </x-tag>
             <x-tag>
-                {{ $job->category }}
+                <a href="{{ route('jobs.index', ['category' => $job->category]) }}" class="btn capitalize">
+                    {{ $job->category }}
+                </a>
             </x-tag>
         </div>
     </div>
