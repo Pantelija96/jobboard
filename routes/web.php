@@ -10,3 +10,8 @@ Route::resource('auth', \App\Http\Controllers\AuthController::class)->only(['cre
 
 Route::delete( 'logout', fn() => to_route('auth.destroy'))->name('logout');
 Route::delete('auth', [\App\Http\Controllers\AuthController::class, 'destroy'])->name('auth.destroy');
+
+Route::middleware('auth')->group(function (){
+    Route::resource('job.application', \App\Http\Controllers\JobApplicationController::class)
+        ->only(['create', 'store', 'destroy']);
+});
