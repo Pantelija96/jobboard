@@ -17,4 +17,7 @@ Route::middleware('auth')->group(function (){
 
     Route::resource('my-job-applications', \App\Http\Controllers\MyJobApplicationController::class)
         ->only(['index', 'destroy']);
+
+    Route::resource('employer', \App\Http\Controllers\EmployerController::class)
+        ->only(['create', 'store']);
 });
