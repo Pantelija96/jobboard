@@ -18,6 +18,15 @@ class Job extends Model
     public static array $experience = ['entry', 'intermediate', 'senior'];
     public static array $category = ['IT', "Finance", "Sales", "Marketing"];
 
+    protected $fillable = [
+        'title',
+        'location',
+        'salary',
+        'description',
+        'experience',
+        'category'
+    ];
+
     public function scopeFilter(QueryBuilder|Builder $query, array $filters): QueryBuilder|Builder {
         return $query->when($filters['search'] ?? null, function ($query, $search){
             $query->where(function ($query) use ($search){
