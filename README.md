@@ -22,19 +22,19 @@ It’s intended as a portfolio project to showcase your Laravel skills to potent
 
 ## Tech Stack
 
-Backend: Laravel 12
+- Backend: Laravel 12
 
-Frontend: Blade templates + Blade components
+- Frontend: Blade templates + Blade components
 
-Styling: Tailwind CSS
+- Styling: Tailwind CSS
 
-Database: MySQL or SQLite
+- Database: MySQL
 
-Auth: Laravel Breeze
+- Auth: Laravel Breeze
 
-Testing: PHPUnit or Pest
-
-Dev Tools: Artisan CLI, Laravel Sail (optional)
+- Testing: PHPUnit
+  
+- Dev Tools: Artisan CLI, Laravel Sail (optional)
 
 ## Project Structure
 
@@ -94,17 +94,15 @@ http://localhost:8000
 
 ## Future Improvements
 
-Add company profiles and dashboards
+- Add company profiles and dashboards
 
-Implement job categories and tagging
+- Implement job categories and tagging
 
-Integrate search filters with Livewire or Vue
+- Add admin panel for managing users and jobs
 
-Add admin panel for managing users and jobs
+- Improve UI design with advanced Blade layouts
 
-Improve UI design with advanced Blade layouts
-
-Expand test coverage for controllers and policies
+- Expand test coverage for controllers and policies
 
 ## About the Developer
 
