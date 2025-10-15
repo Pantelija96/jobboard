@@ -5,9 +5,12 @@
     </div>
 
     <div class="mb-4 flex justify-between text-sm text-slate-500 items-center">
-        <div class="flex space-x-5">
+        <div class="flex space-x-5 items-center ">
             <div>{{ $job->employer->company_name }}</div>
             <div>{{ $job->location }}</div>
+            @if($job->deleted_at)
+                <div class="text-xs text-red-500">Deleted</div>
+            @endif
         </div>
         <div class="flex space-x-2 text-xs">
             <x-tag>
